@@ -37,9 +37,11 @@ goimage supports three image-generation providers:
 ### OpenAI (default)
 
 ```bash
-goimage "a hand-drawn map of a fantasy island"
-goimage -m gpt-image-2 "a photorealistic kitchen at golden hour"
+goimage "a hand-drawn map of a fantasy island"        # defaults to gpt-image-2
+goimage -m gpt-image-1 "fallback when your key isn't org-verified"
 goimage -s 1536x1024 -q high "wide landscape banner"
+goimage -i original.png "make it watercolor"          # image-to-image edit
+goimage -i room.png --mask area.png "put a sofa here" # inpaint with a mask
 ```
 
 ### Google (nano banana)
@@ -92,6 +94,8 @@ llm "describe a poster for a sci-fi novel about whales in space" \
 | `--format`    |       | `png` / `jpeg` / `webp` (OpenAI)                  | `png`       |
 | `--aspect`    |       | Aspect ratio (Google)                             | `1:1`       |
 | `--count`     | `-n`  | Number of images                                  | `1`         |
+| `--input`     | `-i`  | Reference image (repeatable) for image-to-image   | -           |
+| `--mask`      |       | Mask image (OpenAI inpainting)                    | -           |
 | `--open`      |       | Open the saved image                              | `false`     |
 | `--token`     |       | API key                                           | From env    |
 
