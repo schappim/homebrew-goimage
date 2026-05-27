@@ -1,5 +1,5 @@
 class Goimage < Formula
-  desc "CLI for image generation using OpenAI, Google nano banana, or xAI Grok - single Go binary"
+  desc "CLI for image generation via OpenAI, Google nano banana, or xAI Grok"
   homepage "https://github.com/schappim/goimage"
   url "https://github.com/schappim/goimage/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "297f558871069361800e73649198e77f4b216afbd7206eec4edcc97780b86192"
