@@ -1,8 +1,8 @@
 class Goimage < Formula
   desc "CLI for image generation via OpenAI, Google nano banana, or xAI Grok"
   homepage "https://github.com/schappim/goimage"
-  url "https://github.com/schappim/goimage/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "ea84cbcc6d217dd645621a47a6baa10e343d7ea18beff06698a0b47b1e3ccaac"
+  url "https://github.com/schappim/goimage/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "53e4fd5db9f0cf2855b632a70b65500b9cf5ce65a4c66949cf9d9e3915753578"
   license "MIT"
   head "https://github.com/schappim/goimage.git", branch: "master"
 
